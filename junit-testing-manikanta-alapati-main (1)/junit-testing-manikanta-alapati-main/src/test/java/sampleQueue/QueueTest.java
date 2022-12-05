@@ -129,7 +129,6 @@ class QueueTest {
     }
 
     @Test
-    @Disabled
     @DisplayName("Dequeue should throw NoSuchElementException when called on Empty queue")
     void testDequeueOnEmpty(){
         assertThrows(NoSuchElementException.class, ()->this.q.dequeue());
